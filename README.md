@@ -17,7 +17,10 @@ Fichiers requis :
 - requirements.txt
 - Dockerfile  
 
-Commencez par installer [Docker](https://docs.docker.com/desktop/install/linux-install/) et télécharger les fichiers ci-dessus dans un dossier nommé PronoteNormandie.  
+Commencez par installer [Docker](https://docs.docker.com/desktop/install/linux-install/) et cloner le repo avec :
+```bash
+git clone https://github.com/GandalfLeJoyeux/PronoteNormandie.git
+```
 Maintenant que nous avons ce qu'il nous faut éditer le fichier login.txt et renseigner vos identifiants ligne par ligne de cette manière :  
 1. Identifiant ENT (p.nomxx)
 2. Mot de passe ENT
@@ -35,5 +38,4 @@ Puis enfin vous pouvez lancer le conteneur avec la commande :
 ```bash
 docker run --detach --restart always --name pronote_normandie pronotenormandie:1.0
 ```
-Et voilà c'est prêt vous devriez recevoir vos 16 dernières notes d'ici une trentaine de secondes. :ok_hand:
-
+Et voilà c'est prêt vous devriez recevoir les premières notififications d'ici une trentaine de secondes. :ok_hand:
