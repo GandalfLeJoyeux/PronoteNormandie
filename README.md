@@ -1,7 +1,8 @@
 # PronoteNormandie
 
-PronoteNormandie est un script python permettant de recevoir une notification [PushBullet](https://www.pushbullet.com/) pour être averti lorsqu'une nouvelle note est ajoutée sur pronote.  
-
+PronoteNormandie est un script python permettant de recevoir une notification [PushBullet](https://www.pushbullet.com/) pour être averti lorsqu'une nouvelle note est ajoutée sur pronote.
+### Exemple
+![t](https://i.ibb.co/MnWz41r/Notif.jpg)
 ## Pour commencer
 Il vous faut un compte [PushBullet](https://www.pushbullet.com/), l'application sur votre téléphone et modifier le fichier login.txt avec en première ligne votre identidiant ENT, en deuxième ligne votre mot de passe et sur la troisième votre token PushBullet.  
 Il est recommandé d'utiliser docker pour le déployer sur un serveur.
