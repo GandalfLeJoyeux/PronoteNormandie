@@ -27,11 +27,11 @@ Maintenant que nous avons ce qu'il nous faut éditer le fichier login.txt et ren
 2. Mot de passe ENT
 3. Token PushBullet
 
-Ensuite il nous faut créer l'image du conteneur avec docker build, éxecutez la commande :  
+Ensuite il nous faut créer l'image du conteneur avec docker build, exécutez la commande :  
 ```bash
 docker build -t pronotenormandie:1.0 .
 ```
-Une fois le processus terminé vérifiez que l'image a bien été créé avec la commande :
+Une fois le processus terminé vérifiez que l'image a bien été créée avec la commande :
 ```bash
 docker images
 ```
