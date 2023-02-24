@@ -15,7 +15,7 @@ with open('login.txt', 'r') as fichier:
     for i in range(3):
         ligne = fichier.readline().strip()
         identifiant.append(ligne)
-
+    fichier.close()
 pb = Pushbullet(identifiant[2])
 
 # Options Chrome
@@ -77,10 +77,15 @@ for i in range(16):
 
    except:
       pass
-   
+driver.close()
+
 # On lit les anciennes notes, si le fichier est vide alors toutes les notes seront considéré comme nouvelles.
+
 try:
-    dict2 = eval(open("note.txt",'r', encoding="utf-8").read())
+    with open("note.txt", "r", encoding='utf-8') as notetxt :
+        dict2 = eval(notetxt.read())
+        notetxt.close()
+    pass
 except:
     dict2 = {'note0': ['', '', '', '']}
     pass
@@ -101,6 +106,7 @@ for new in dict1:
             pass
         
 #Remplace les anciennes notes par les nouvelles.
-open("note.txt",'w', encoding="utf-8").write(str(dict1))
-driver.close()
+with open("note.txt", "w", encoding="utf-8") as notetxt :
+    notetxt.write(str(dict1))
+    notetxt.close()
 # FIN
