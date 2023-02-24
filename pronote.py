@@ -77,7 +77,7 @@ for i in range(16):
 
    except:
       pass
-driver.close()
+driver.quit()
 
 # On lit les anciennes notes, si le fichier est vide alors toutes les notes seront considéré comme nouvelles.
 
